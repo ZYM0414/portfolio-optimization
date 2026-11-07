@@ -52,7 +52,7 @@ We take the prediction team's forecasts and turn them into portfolios the fund c
 - When it's ready, open a **pull request** and get **one teammate's review** before merging.
 
 ### Weekly updates → Discussions
-**Post updates in your Discussions category: **Project 1 Updates** or **Project 2 Updates**.
+Post updates in your Discussions category: **Project 1 Updates** or **Project 2 Updates**.
 
 ```
 Done:
