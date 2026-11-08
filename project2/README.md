@@ -56,7 +56,9 @@ python -m pip install -e '.[dev]'
 python -m pytest
 ```
 
-Since the team's public repository deliberately excludes price/factor datasets, start with:
+The repository includes **vetted derived research outputs** in [`outputs/`](outputs/) and the fully self-contained [factor dashboard HTML](reports/factor_dashboard.html) in [`reports/`](reports/). Download the HTML file and open it locally in a browser; GitHub's file viewer will display source rather than execute the dashboard. Raw price/factor source datasets remain excluded from the public repository.
+
+To regenerate the dashboard and model outputs from fresh source data, start with:
 
 ```bash
 python scripts/download_prices.py
@@ -66,7 +68,7 @@ python scripts/audit_universe_history.py
 python scripts/validate_data.py
 ```
 
-Then open `reports/factor_dashboard.html` locally. The download may be extensive; Yahoo Finance and Kenneth French source availability, their use/redistribution terms, and market-data freshness should be checked separately. The factor dashboard HTML is **generated locally** and is not included here; the screenshot above shows the earlier validated result.
+Then open `reports/factor_dashboard.html` locally. The download may be extensive; Yahoo Finance and Kenneth French source availability, their use/redistribution terms, and market-data freshness should be checked separately. The committed Dashboard is a **dated research snapshot**; rerunning the pipeline can generate updated outputs. The screenshot above previews the committed Dashboard.
 
 For detailed method and evidence, read [lead review summary](docs/lead_review_summary.md), [six-factor methodology](docs/phase2_factor_model.md), [Universe V2 audit](docs/universe_v2_history_audit.md), and [Universe V2 execution report](docs/universe_v2_execution_report.md).
 
